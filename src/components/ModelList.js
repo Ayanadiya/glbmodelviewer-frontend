@@ -22,7 +22,7 @@ const ModelList=()=>{
     let text;
     if(!models || models.length===0)
     {
-        text=<p>No models to dislay.</p>
+        text=<p>No models to display.</p>
     }
     if(models.length>0)
     {
