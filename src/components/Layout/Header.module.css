@@ -3,5 +3,17 @@
     align-items: center;
     justify-content: space-around;
     background-color: black;
-    color: aquamarine;
+    color: paleturquoise;
+}
+.button{
+    background-color:paleturquoise;
+    color: black;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: rgb(74, 136, 136);
 }

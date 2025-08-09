@@ -1,6 +1,8 @@
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
   padding: 20px;
 }
@@ -17,5 +19,6 @@
 
 .modelCard:hover {
   transform: scale(1.02);
+  background-color: paleturquoise;
 }
 

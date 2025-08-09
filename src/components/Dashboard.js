@@ -17,7 +17,7 @@ const Dashboard= ()=>{
 
     const fetchModel= async()=>{
         try {
-            const response= await fetch("http://127.0.0.1:4000/files", {
+            const response= await fetch("https://glbmodelviewer-backend.onrender.com/files", {
                 method:"GET"
             })
             if(!response.ok){
