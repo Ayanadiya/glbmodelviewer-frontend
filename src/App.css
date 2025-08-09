@@ -22,7 +22,9 @@
   flex:1;
   background-color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
+  padding: 20px;
 }

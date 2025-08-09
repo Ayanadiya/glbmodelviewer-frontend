@@ -1,15 +1,11 @@
 
 import './App.css';
-import Viewer from './components/Viewer';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
-      <main className='App-main'>
-        <Viewer modelurl={"/models/Lighthouse_by_get3dmodels.glb"} />
-      </main>
+      <Dashboard/>
     </div>
   );
 }
