@@ -1,8 +1,8 @@
 import { Fragment, useState, useEffect } from "react";
-import Header from "./Layout/Header";
+import Header from "../Layout/Header";
 import UploadForm from "./UploadForm";
 import { useDispatch, useSelector } from "react-redux";
-import { modelsActions } from "../store/Model";
+import { modelsActions } from "../../store/Model";
 import ModelList from "./ModelList";
 import View from "./View";
 

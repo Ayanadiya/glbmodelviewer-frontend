@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { modelViewerActions } from "../store/ModelViewer";
+import {modelViewerActions} from '../../store/ModelViewer'
 import classes from './ModelList.module.css'
 import { Fragment } from "react";
 

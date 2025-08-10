@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Modal from "./UI/Modal";
-import Button from "./UI/Button";
+import Modal from "../UI/Modal"
+import Button from "../UI/Button";
 import { useDispatch } from "react-redux";
-import { modelsActions } from "../store/Model";
+import { modelsActions } from "../../store/Model";
 
 const UploadForm= (props) =>{
     const dispatch=useDispatch();

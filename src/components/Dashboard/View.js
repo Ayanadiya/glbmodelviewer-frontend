@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { modelViewerActions } from '../store/ModelViewer';
+import { modelViewerActions } from '../../store/ModelViewer';
 import Viewer from './Viewer';
-import Modal from './UI/Modal';
+import Modal from '../UI/Modal';
 
 const View= ()=>{
     const dispatch= useDispatch();
