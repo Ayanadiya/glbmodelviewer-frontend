@@ -5,7 +5,7 @@ import { Fragment } from "react";
 
 const ModelList=()=>{
     const dispatch=useDispatch();
-    const models= useSelector((state)=>state.models.models);
+    const {models, isFetching}= useSelector((state)=>state.models);
 
     const getModel= async(id)=>{
       try {
@@ -20,11 +20,15 @@ const ModelList=()=>{
       }
     }
     let text;
-    if(!models || models.length===0)
+    if(isFetching===true)
+    {
+      text=<p>Getting models....</p>
+    }
+    else if(!models || models.length===0 )
     {
         text=<p>No models to display.</p>
     }
-    if(models.length>0)
+    else if(models.length>0)
     {
         text=<Fragment>
           <h1>Available 3D Models</h1>

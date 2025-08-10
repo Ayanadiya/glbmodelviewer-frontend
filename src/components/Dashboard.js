@@ -17,6 +17,7 @@ const Dashboard= ()=>{
 
     const fetchModel= async()=>{
         try {
+            dispatch(modelsActions.setFetching());
             const response= await fetch("https://glbmodelviewer-backend.onrender.com/files", {
                 method:"GET"
             })
@@ -26,6 +27,7 @@ const Dashboard= ()=>{
             const data= await response.json();
             console.log(data);
             dispatch(modelsActions.set(data));
+            dispatch(modelsActions.setNotFetching());
         } catch (error) {
             console.log(error);
         }

@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
-    models:[]
+    models:[],
+    isFetching:false,
 }
 
 const modelsSlice= createSlice({
@@ -16,6 +17,12 @@ const modelsSlice= createSlice({
         },
         set(state, action){
             state.models=action.payload;
+        },
+        setFetching(state){
+            state.isFetching=true;
+        },
+        setNotFetching(state){
+            state.isFetching=false;
         }
     }
 })
